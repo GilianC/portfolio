@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import Image from "next/image"
 
 export function Hero() {
   const [text, setText] = useState("")
@@ -39,8 +40,15 @@ export function Hero() {
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
             <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-primary to-accent p-1">
-              <div className="w-full h-full rounded-full bg-background flex items-center justify-center text-4xl md:text-5xl font-bold">
-                GC
+              <div className="w-full h-full rounded-full overflow-hidden bg-background">
+                <Image
+                  src="/pp.jpg"
+                  alt="Gilian CANNIER"
+                  width={160}
+                  height={160}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>

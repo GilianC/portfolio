@@ -13,12 +13,12 @@ export function Footer() {
     },
     {
       name: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/gilian-cannier-68ab9a2b5/",
       icon: Linkedin,
     },
     {
       name: "Email",
-      href: "mailto:gilian.cannier@example.com",
+      href: "mailto:gilian.cannier1@gmail.com",
       icon: Mail,
     },
   ]
